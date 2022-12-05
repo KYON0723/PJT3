@@ -1,0 +1,25 @@
+/* eslint-disable */
+
+const PostAPI = async (data, token) => {
+  const resposnse = await axiosClient.post('/asdf', 
+  data, {
+    headers: {
+      'Authorization': token,
+    },
+  })
+  return resposnse;
+};
+
+const token = `Bearer ${useSelector((state) => state.auth.accessToken)}`
+
+const data = {
+  asdf : asdf
+}
+
+PostAPI(data, token)
+  .then((res) => {
+      console.log(res)
+  })
+  .catch((err) => {
+      console.log(err);
+  });

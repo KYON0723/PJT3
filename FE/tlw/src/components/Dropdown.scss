@@ -1,0 +1,25 @@
+.thema-option-wrapper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0 3px 0 3px;
+        padding: 0 0 0 0;
+        border: 0;
+        float: left;
+
+        color: black;
+
+        .option {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            border-radius: 100%;
+        }
+
+        :hover {
+            scale: 1.1;
+        }
+    }
+}

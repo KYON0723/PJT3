@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.login {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(247.67deg, #8C7BF4 18.13%, #FF9AE3 85.61%);
+    overflow: hidden;
+
+    animation: main linear 5s;
+    .wrapper {
+        position: absolute;
+        width: 300px;
+        height: 30vh;
+
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h1 {
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font: 92px/1 "Poiret One";
+        color: #fff;
+        text-align: center;
+    }
+
+    button {
+
+        width: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 350%);
+        font: 45px "Poiret One";
+        color: #fff;
+        text-align: center;
+        border: 1px solid #fff;
+        background: none;
+        transition: background .5s ease-in;
+    }
+
+    button:hover {
+        background: rgba(140, 123, 244, 1);
+    }
+
+    section {
+        width: 1000px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        overflow: hidden;
+
+        .sky {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            .sun {
+                height: 300px;
+                width: auto;
+                position: absolute;
+                top: 0px;
+                left: 350px;
+                opacity: 0;
+
+                transform-origin: center 500px;
+                animation: sun linear 5s;
+            }
+
+            .moon {
+                height: 300px;
+                width: auto;
+                position: absolute;
+                top: 0px;
+                left: 350px;
+
+                transform-origin: center 500px;
+                animation: moon linear 5s;
+            }
+
+        }
+
+        .title {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            .logoTitleBlack {
+                height: 300px;
+                width: auto;
+                position: absolute;
+                top: 0px;
+                left: 350px;
+
+                animation: titleblack linear 5s;
+            }
+
+            .logoTitleWhite {
+                position: absolute;
+                height: 300px;
+                width: auto;
+                top: 0px;
+                left: 350px;
+
+                opacity: 0;
+                animation: titlewhite linear 5s;
+            }
+        }
+    }
+}
+
+@keyframes sun {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes moon {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes titlewhite {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes titleblack {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes main {
+    0% {
+        background: rgba(140, 123, 244, 1)
+    }
+
+    50% {
+        background: rgba(154, 219, 255, 1)
+    }
+
+    100% {
+        background: rgba(140, 123, 244, 1)
+    }
+}
+

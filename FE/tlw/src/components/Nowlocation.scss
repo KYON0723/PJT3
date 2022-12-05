@@ -1,0 +1,51 @@
+.now-inform {
+    @media (max-width: 750px) or (max-height: 500px){
+        /* 브라우저 사이즈 750px 이하일때*/
+        z-index: -999;
+    }
+    position: absolute;
+    width: 250px;
+    height: 125px;
+    left: 4vw;
+    bottom: 4vh;
+    border-radius: 9px;
+    padding: 25px;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+
+    .city {
+
+        overflow: hidden;
+
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        // padding-top: 5px;
+        color: white;
+    }
+
+    .temp {
+        font-size: 42px;
+        color: white;
+        font-weight: 100;
+    }
+
+    .left-panel {}
+
+    .panel {
+        display: inline-block;
+    }
+
+    .right-panel {
+        position: absolute;
+        float: right;
+        top: 0;
+        right: 0;
+    }
+
+    .date {
+        font-size: 12px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

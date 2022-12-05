@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.backSky {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(247.67deg, #8C7BF4 18.13%, #473F76 85.61%);
+    overflow: hidden;
+
+    .star {
+        background: yellow;
+        border-radius: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    .backSky {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background: linear-gradient(to right, #111, #0e0f19);
+        overflow: hidden;
+    }
+
+    /* 별을 감싼 부모 */
+    .sky {
+        width: 100vw;
+        height: 100vw;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: moveStar 240s linear infinite;
+    }
+
+    .info {
+        position: absolute;
+        left: 4vw;
+
+        h1 {
+            font-size: 160px;
+            color: white;
+            font-family: "Poiret One";
+        }
+
+        span {
+            font-size: 32px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+
+    .spaceMan {
+        position: absolute;
+        right: 4vw;
+        bottom: 4vh;
+        width: 16vw;
+        height: auto;
+        animation: moveSpaceMan 1s linear 0s infinite alternate;
+    }
+}
+
+/* 별 */
+
+/* 별 이동효과 */
+@keyframes moveStar {
+    from {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes moveSpaceMan {
+    from {
+        bottom: 4vh;
+    }
+
+    to {
+        bottom: 6vh;
+    }
+}

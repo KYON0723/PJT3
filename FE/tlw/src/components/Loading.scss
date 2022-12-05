@@ -1,0 +1,171 @@
+.loading {
+    width: 100%;
+    height: 100%;
+
+    .Moon {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        z-index: 3;
+    }
+
+    .SpaceMan {
+        height: 20vh;
+        width: auto;
+
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        z-index: 4;
+        transform: translate(-50%, -100%);
+    }
+
+    .Rocket {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 4%;
+        z-index: 2;
+        transform: rotate(180deg);
+
+        animation: rocket 5s infinite;
+    }
+
+    .Earth {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20%;
+        height: auto;
+        transform: translate(-50%, -110%);
+    }
+
+    .title {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -150%);
+        width: 100%;
+        text-align: center;
+        z-index: 3;
+        color: #fff;
+        font-size: 60px;
+
+        :nth-child(1) {
+            animation: first 2s infinite;
+            color: #fff;
+        }
+
+        :nth-child(2) {
+            animation: second 2s infinite;
+            color: #fff;
+        }
+
+        :nth-child(3) {
+            animation: third 2s infinite;
+            color: #fff;
+        }
+    }
+}
+
+@keyframes rocket {
+    0% {}
+
+    100% {
+        scale: 15;
+        top: 100%;
+        left: 0%;
+    }
+}
+
+@keyframes spaceMan {
+    from {
+        transform: rotate(-90deg);
+        transform-origin: -500px;
+    }
+
+    to {
+        transform: rotate(90deg);
+        transform-origin: -500px;
+    }
+}
+
+@keyframes first {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes second {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes third {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

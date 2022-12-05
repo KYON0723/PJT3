@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.MusciRecommend {
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+    .player-wrapper {
+        border: 1px solid red;
+        width: 100%;
+        height: 200px;
+        position: relative;
+        min-width: 500px;
+        min-height: 800px;
+        overflow: hidden;
+        // transform: translate(50%);
+    }
+
+
+    .feel{
+        font: 45px "Poiret One";
+        color: #fff;
+        position: absolute;
+        left:50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .done-button{
+        width: 150px;
+        position: absolute;
+        bottom:50px;
+        right: 50px;
+        font: 45px "Poiret One";
+        color: #fff;
+        text-align: center;
+        border: 1px solid #fff;
+        background: none;
+    }
+}

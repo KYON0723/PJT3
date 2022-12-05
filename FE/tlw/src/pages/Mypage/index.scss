@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.Mypage {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .wrapper {
+        position: absolute;
+        width: 30vw;
+        height: 30vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

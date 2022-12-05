@@ -1,0 +1,75 @@
+.diaryWelcome {
+    figure {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(247.67deg, #8C7BF4 18.13%, #FF9AE3 85.61%);
+    }
+
+    button {
+        width: 50%;
+        font: 45px "Poiret One";
+        color: #fff;
+        text-align: center;
+        border: 1px solid #fff;
+        background: none;
+
+        transition: border 2s ease-out, color 2s ease-out, background .5s ease-in-out;
+
+    }
+
+    button:hover {
+        background: rgba(140, 123, 244, 1);
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+
+    .canclebutton:hover {
+        background: rgb(244, 123, 123);
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+    .wrapper-button {
+        min-width: 350px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 350%);
+    }
+
+    h1 {
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font: 120px "Poiret One";
+        color: #fff;
+        text-align: center;
+    }
+
+    .typing-demo {
+        width: 45ch;
+        animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+}
